@@ -27,7 +27,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/DBdiss");
+mongoose.connect("mongodb+srv://vasanth:vasanth12@cluster0.dnppu.mongodb.net/TodoDB?retryWrites=true");
 const userSchema = new mongoose.Schema({
   username: String,
   email: String,
